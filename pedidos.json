@@ -1,0 +1,17 @@
+[
+    {
+        "itens": {
+            "Creme de Açaí Grande": 1
+        },
+        "total": 20.0,
+        "data_pedido": "2025-06-12 20:15:30"
+    },
+    {
+        "itens": {
+            "Creme de Açaí Pequeno": 2,
+            "Creme de Açaí Médio": 1
+        },
+        "total": 35.0,
+        "data_pedido": "2025-06-12 20:15:50"
+    }
+]
