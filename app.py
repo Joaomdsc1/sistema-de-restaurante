@@ -16,10 +16,10 @@ st.sidebar.header("Bem-vindo ao Nosso Açaí!")
 data = pd.read_csv('csv/cardapio.csv') 
 
 pages = {
-    "Cardápio": lambda: st.write(cardapio_page(data)),
-    "Pedido": lambda: st.write(pedido_page()),
-    "Sobre": lambda: st.write(sobre_page()),
-    "Contato": lambda: st.write(contato_page())
+    "Cardápio": lambda: cardapio_page(data),
+    "Pedido": lambda: pedido_page(),
+    "Sobre": lambda: sobre_page(),
+    "Contato": lambda: contato_page()
 }
 
 # Exibindo o conteúdo da página selecionada
