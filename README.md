@@ -64,30 +64,36 @@ Certifique-se de ter os seguintes softwares instalados:
 ## 3. Explicação das tecnologias utilizadas
 
 **Streamlit**
+
 Streamlit foi usado para criar a interface gráfica do sistema, permitindo a navegação entre páginas e a realização de pedidos.
 
 * Utilizado para montar páginas como cardápio, pedido, sobre e contato com componentes interativos.
 * Permite exibir tabelas, formulários e mensagens dinâmicas conforme as ações do usuário.
 
 **Pandas**
+
+
 Pandas foi usado para manipular o cardápio e calcular os totais dos pedidos.
 
 * Leu os dados do cardápio a partir de um arquivo CSV para exibição e uso nos pedidos.
 * Realizou o cálculo do valor total de cada pedido com base na quantidade e preço de cada item.
 
 **JSON**
+
 O formato JSON foi usado para armazenar os pedidos realizados pelos usuários.
 
 * Guardou cada pedido como um dicionário dentro de uma lista salva no arquivo pedidos.json.
 * Permitiu persistir as informações dos pedidos mesmo após o sistema ser fechado.
 
 **Pytest**
+
 Pytest foi utilizado para testar automaticamente as funcionalidades do sistema.
 
 * Verificou se os pedidos estão sendo carregados e salvos corretamente.
 * Testou o comportamento da interface simulando ações do usuário com mocks.
 
 **Unittest.mock**
+
 Unittest.mock foi usado nos testes para simular leitura e escrita de arquivos e ações do Streamlit.
 
 * Evitou acessar arquivos reais, simulando a função open e a presença do arquivo pedidos.json.
