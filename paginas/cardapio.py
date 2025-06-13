@@ -39,6 +39,10 @@ def cardapio_page(data):
     """
     st.header("Cardápio Interativo 🍽️")
 
+    if not {'Prato', 'Preço'}.issubset(data.columns):
+        st.error("Erro: o DataFrame deve conter as colunas 'Prato' e 'Preço'.")
+        return
+
     left_column, right_column = st.columns(2)
 
     # Coluna da Esquerda: Cardápio

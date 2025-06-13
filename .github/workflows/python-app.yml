@@ -44,13 +44,13 @@ jobs:
 
     - name: Lint with flake8 (optional)
       run: |
-        flake8 paginas testes --count --select=E9,F63,F7,F82 --show-source --statistics
-        flake8 paginas testes --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        flake8 paginas --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 paginas --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       continue-on-error: true
 
     - name: Test with pytest
       run: |
-        pytest testes/test.py -v --cov=paginas --cov-report=xml --cov-report=html
+        pytest test.py -v --cov=paginas --cov-report=xml --cov-report=html
       env:
         PYTHONPATH: .
 
